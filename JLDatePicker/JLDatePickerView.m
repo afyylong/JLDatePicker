@@ -344,7 +344,7 @@ const CGFloat JLDatePickerViewButtonHeight = 35.0;
     if (recognizer.state == UIGestureRecognizerStateRecognized) {
         [self dismiss];
         
-        if ([_delegate respondsToSelector:@selector(HNPickerViewDidDismissWithCancel:)]) {
+        if ([_delegate respondsToSelector:@selector(JLDatePickerViewDidDismissWithCancel:)]) {
             [_delegate JLDatePickerViewDidDismissWithCancel:self];
         }
     }
